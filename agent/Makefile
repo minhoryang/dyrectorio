@@ -32,6 +32,12 @@ go-crane: ##
 	go run . ; \
 	cd -
 
+.PHONY: go-crane-init
+go-crane-init: ##
+	cd cmd/crane && \
+	go run . init ; \
+	cd -
+
 .PHONY: go-dagent
 go-dagent: ##
 	cd cmd/dagent && \
